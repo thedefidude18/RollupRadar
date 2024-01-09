@@ -49,16 +49,12 @@ function Coins({ coins }) {
                     <div className='border-b dark:border-opacity-12'>
                         <nav className='flex space-x-8'>
                             <a href='javascript:void(0);' className='rounded-a text-sm font-medium border-b-2 border-transparent py-3'>
-                                <FontAwesomeIcon className='mr-1' icon={faStar} style={{ color: '#f3da35' }} />포트폴리오
+                                <FontAwesomeIcon className='mr-1' icon={faStar} style={{ color: '#5ac8fa' }} /> Listed Rollups | 4,057
                             </a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>코인</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>신규 코인</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>수익률 상/하위</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>카테고리</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>NFT</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>디파이</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>게임</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>BNB</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>Solana</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>Avalanche</a>
                         </nav>
@@ -66,9 +62,8 @@ function Coins({ coins }) {
                 </div>
 
                 <div className='home-section my-4'>
-                    <h1 className='text-2xl font-bold pb-0 mb-2 mr-2 text-gray-900 dark:text-0.87'>시가총액별 암호화폐 시세</h1>
-                    <p className='text-sm font-normal text-gray-500 dark:text-0.6'>현재 전 세계 암호화폐 시가총액은 $1.01조이며, 최근 24시간 내 변동폭은 <span className='text-green-500'>4.5% <FontAwesomeIcon icon={faTurnUp} /></span> 입니다. &nbsp;
-                        <Accordion content="전일 총 암호화폐 거래량은 $91.8십억입니다. 비트코인 지배력은 37.7%, 이더리움 지배력은 16.3%입니다. CoinGecko는 현재 12,952종의 암호화폐 정보를 추적합니다. 업계 주요 트렌드는 현재 DeFi 및 Play to Earn입니다." /> </p>
+                    <p className='text-sm font-normal text-gray-500 dark:text-0.6'>Listed Rollups <span className='text-green-500'>5,067 <FontAwesomeIcon icon={faTurnUp} /></span> Live Rollups 3,068 </p>
+                    
                 </div>
 
                 <div className='flex justify-end my-3 border-t'>
@@ -82,13 +77,14 @@ function Coins({ coins }) {
                                 <tr className='border-b border-t'>
                                     <th></th>
                                     <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>#</th>
-                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'>코인</th>
+                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'>Rollups</th>
                                     <th></th>
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>시세</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>24시간 %</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>24시간 거래량</th>
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>시가총액</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>최근 일주일</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>Status</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>Stack</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>TVL</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>RPC</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>Bridge</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>Github</th>
                                 </tr>
                             </thead>
                             <tbody className='dark:text-white'>

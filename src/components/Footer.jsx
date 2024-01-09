@@ -21,7 +21,7 @@ function Footer() {
             <div className='rounded-div mt-8 w-ful text-white hidden lg:block'>
                 <div className='my-5 grid gap-2 md:grid-cols-4 sm:grid-cols-3'>
                     <div>
-                        <h1 className='text-2xl font-semibold'>CoinGecko</h1>
+                        <h1 className='text-2xl font-semibold'>RollupRadar</h1>
                         <p className='max-w-[160px] mt-2 text-sm'>고객 센터 | <a href="javascript:void(0);">버그 바운티 |</a><br /> 면책 조항 | <a href="javascript:void(0);">이용 약관 |</a > 개인정보취급방침 |</p>
                     </div>
                     <div>
@@ -59,7 +59,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='flex justify-center pb-2 text-xs'>
-                    <small>© 2022 CoinGecko. All Rights Reserved.</small>
+                    <small>© 2024 RollupRadar. All Rights Reserved.</small>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@ function Footer() {
                     <a href='javascript:void(0);' className='text-white text-xs'>개인정보취급방침</a>
                 </div>
                 <div className='flex justify-center items-center mt-2 text-xs text-4a4a4a'>
-                    © 2022 CoinGecko. All Rights Reserved.
+                    © 2024 RollupRadar. All Rights Reserved.
                 </div>
             </div>
         </footer>

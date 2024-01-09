@@ -8,6 +8,7 @@ function MobileMenu({user, signOut}) {
   return (
     <Menu right>
             <Link to="/">Home</Link>
+            <Link to="/">Explorer</Link>
             {user?.email && <Link to="/account">Account</Link>}
             {user?.email ? (<button onClick={signOut}>Log Out</button>
             ) : (
