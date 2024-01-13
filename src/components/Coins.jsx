@@ -16,6 +16,8 @@ function Coins({ coins }) {
     const [searchText, setSearchText] = useState("")
     const [page, setPage] = useState(1);
 
+    const [TableData, setTableData] = useState([])
+
     const useStyles = makeStyles({
         row: {
             backgroundColor: "#16171a",
@@ -42,10 +44,24 @@ function Coins({ coins }) {
         );
     };
 
+    useEffect(() => {
+        
+        axios("https://rollupradar.xyz/")
+        .then((res)=>{
+           
+            if(res.status == 200){
+                console.log(res.data.data);
+                setTableData(res.data.data);
+            }
+        })
+    }, [])
+    
+
+
     return (
         <div>
             <div className='rounded-div'>
-                <div className='sm:hidden'>
+            <div className='sm:hidden'>
                     <div className='border-b dark:border-opacity-12'>
                         <nav className='flex space-x-8'>
                             <a href='javascript:void(0);' className='rounded-a text-sm font-medium border-b-2 border-transparent py-3'>
@@ -70,55 +86,50 @@ function Coins({ coins }) {
                     <input onChange={(e) => setSearchText(e.target.value)} type="text" className='bg-gray-100 dark:bg-gray-600 rounded-md py-1 indent-3 outline-none my-5' placeholder='Search' />
                 </div>
 
+               
+
                 <div className='relative'>
                     <div className='overflow-x-auto'>
                         <table className='w-full border-collapse text-center'>
                             <thead className='dark:text-white h-11 dark:bg-181818 '>
                                 <tr className='border-b border-t'>
-                                    <th></th>
+                                  
                                     <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>#</th>
-                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'>Rollups</th>
-                                    <th></th>
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>Status</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>Stack</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>TVL</th>
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>RPC</th>
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>Bridge</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>Github</th>
+                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'>🚀Rollups</th>
+                                   
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>👨🏻‍💻Status</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>🗂️Stack</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>📊TVL</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>🔗 RPC</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>🌉Bridge</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>🌐Github</th>
                                 </tr>
                             </thead>
                             <tbody className='dark:text-white'>
-                                {coins.filter((value) => {
-                                    if (searchText === "") {
-                                        return value
-                                    } else if (value.name.toLowerCase().includes(searchText.toLowerCase())) {
-                                        return value
-                                    }
-                                })
-                                    .slice((page - 1) * 20, (page - 1) * 20 + 20)
-                                    .map((coin) => (
-                                        <CoinItem key={coin.id} coin={coin} />
-                                    ))}
+                                {
+                                    TableData.map((ele)=>{
+                                        return(
+                                            <tr  className='h-[75px] border-b overflow-hidden'>
+                                                 <td className='w-40 text-sm py-1 px-2'>{ele.id}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'>{ele.Rollup}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'>{ele.Status}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'>{ele.Stack}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'>{ele.TVL}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'> <a target='_blank' href={"http://"+ele.RPC}>{ele.RPC}</a> </td>
+                                                 <td className='w-40 text-sm py-1 px-2'> <a target='_blank' href={"http://"+ele.Bridge}>{ele.Bridge}</a> </td>
+                                                 <td className='w-40 text-sm py-1 px-2'> <a target='_blank' href={"http://"+ele.Github}>{ele.Github}</a> </td>
+                                              
+                                          </tr>
+                                        )
+                                    })
+                                }
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
 
-            <Pagination
-                count={parseInt((handleSearch()?.length / 20).toFixed(0))}
-                style={{
-                    padding: 20,
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                }}
-                classes={{ ul: classes.pagination }}
-                onChange={(_, value) => {
-                    setPage(value);
-                    window.scroll(0, 450);
-                }}
-            />
+          
         </div>
 
     );
