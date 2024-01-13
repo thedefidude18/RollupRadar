@@ -94,15 +94,15 @@ function Coins({ coins }) {
                             <thead className='dark:text-white h-11 dark:bg-181818 '>
                                 <tr className='border-b border-t'>
                                   
-                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>#</th>
-                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'>🚀Rollups</th>
+                                    <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>🥇</th>
+                                    <th className='text-left text-sm dark:text-hsla-dark whitespace-nowrap'><button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>🚀 Rollups</button></th>
                                    
                                     <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>👨🏻‍💻Status</th>
                                     <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>🗂️Stack</th>
                                     <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>📊TVL</th>
                                     <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>🔗 RPC</th>
                                     <th className='text-sm dark:text-hsla-dark whitespace-nowrap'>🌉Bridge</th>
-                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'>🌐Github</th>
+                                    <th className='text-sm dark:text-hsla-dark w-17 whitespace-nowrap'><button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>구독</button>🌐Github</th>
                                 </tr>
                             </thead>
                             <tbody className='dark:text-white'>

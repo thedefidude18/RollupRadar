@@ -15,8 +15,8 @@ module.exports = {
       '0.87': 'rgba(255,255,255, 0.87)',
       '0.05': 'rgba(255,255,255, 0.05)',
       '1': 'rgba(255,255,255, 1)',
-      '121212': '#111827',
-      '181818': '#181818',
+      '121212': '#030712',
+      '181818': '#030712',
       '4a4a4a': '#4a4a4a',
       '3f3f3f': '#3f3f3f',
       '7ab52b': '#7ab52b',
@@ -27,7 +27,7 @@ module.exports = {
       'hsla-gray': 'rgba(107,114,128, 1)',
       'hsla-blue': 'rgba(59,130,246, 1)',
       'hsla-dark': 'hsla(0,0%,100%,.6)',
-      'footer-dark': 'rgba(24,24,24, 1)',
+      'footer-dark': 'rgb(3 7 18)',
       'boder-hsla-fff': 'hsla(0,0%,100%,.1)',
       'ddd': '#ddd',
       'white': '#fff',
@@ -35,7 +35,7 @@ module.exports = {
       'slate-200': 'rgb(203 213 225)',
       'slate-300': 'rgb(203 213 225)',
       'slate-600': 'rgb(71 85 105)',
-      'slate-700': 'rgb(51 65 85)',
+      'slate-700': 'rgb(124,58,237)',
       'slate-800': 'rgb(15 23 42)',
       'black': 'rgb(0 0 0)',
       'blue-200': 'rgb(191 219 254)',
@@ -60,6 +60,7 @@ module.exports = {
       'primary-500': 'rgba(141,198,71, 1)',
       'opacity-12': '.12',
       'opacity-87': '.87',
+      
 
     },
 

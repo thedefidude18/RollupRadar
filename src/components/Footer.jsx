@@ -8,7 +8,7 @@ import { AppBar } from '@material-ui/core';
 function Footer() {
     return (
         <footer className='bg-footer-dark'>
-            <div className='bg-3f3f3f text-center py-4 px-0'>
+            <div className='bg-030712 text-center py-4 px-0'>
                 <div className='w-140 max-w-full my-0 mx-auto py-0 px-4'>
                     <i className='text-e15241 mr-1'>🚀</i>
                     <span className='text-eee text-sm'>
