@@ -29,7 +29,7 @@ function Footer() {
                         <h2 className='text-xl font-semibold mb-2'>Docs</h2>
                         <ul className=' text-gray-400'>
                         <li className='text-4a4a4a dark:text-eee'>
-                                    <a href='javascript:void(0);' className='text-sm font-medium hover:text-green-hover'>+ List your rollup</a>
+                                    <a href='https://rollupradar.gitbook.io/' className='text-sm font-medium hover:text-green-hover'>Knowledge base</a>
                                 </li>
                        
                         </ul>
@@ -38,7 +38,7 @@ function Footer() {
                         <h2 className='text-xl font-semibold mb-2'>Partner with us</h2>
                         <ul className=' text-gray-400'>
                             <li><li className='text-4a4a4a dark:text-eee'>
-                                    <a href='javascript:void(0);' className='text-sm font-medium hover:text-green-hover'>+ List your rollup</a>
+                            <a href='mailto:partnership@rollupradar.xyz' className='text-white text-xs'>Partner with us</a>
                                 </li></li>
                            
                         </ul>
@@ -66,11 +66,11 @@ function Footer() {
 
             <div className='py-2 1lg:hidden'>
                 <div className='flex justify-center items-center'>
-                    <a href='#' className='text-white text-xs'>+ List your Rollup</a>
+                    <a href='https://forms.gle/PjEsUKf4Lb7mziPU6' className='text-white text-xs'>+ List your Rollup</a>
                     <span className='mx-1 text-4a4a4a'>•</span>
-                    <a href='#' className='text-white text-xs'>이용약관</a>
+                    <a href='https://rollupradar.gitbook.io/untitled/' className='text-white text-xs'>docs</a>
                     <span className='mx-1 text-4a4a4a'>•</span>
-                    <a href='#;' className='text-white text-xs'>개인정보취급방침</a>
+                    <a href='mailto:partnership@rollupradar.xyz' className='text-white text-xs'>Partner with us</a>
                 </div>
                 <div className='flex justify-center items-center mt-2 text-xs text-4a4a4a'>
                     © 2024 RollupRadar. All Rights Reserved.

@@ -78,12 +78,12 @@ function Coins({ coins }) {
                 </div>
 
                 <div className='home-section my-4'>
-                    <p className='text-sm font-normal text-gray-500 dark:text-0.6'>Listed Rollups <span className='text-green-500'>5,067 <FontAwesomeIcon icon={faTurnUp} /></span> Live Rollups 3,068 </p>
+                    <p className='text-sm font-normal text-gray-500 dark:text-0.8'>Listed Rollups <span className='text-green-500'>5,067 <FontAwesomeIcon icon={faTurnUp} /></span> Live Rollups 3,068 </p>
                     
                 </div>
 
                 <div className='flex justify-end my-3 border-t'>
-                    <input onChange={(e) => setSearchText(e.target.value)} type="text" className='bg-gray-100 dark:bg-gray-600 rounded-md py-1 indent-3 outline-none my-5' placeholder='Search' />
+                    <input onChange={(e) => setSearchText(e.target.value)} type="text" className='bg-gray-100 dark:bg-gray-600 rounded-md py-1 indent-3 outline-none my-5' placeholder='Search Rollups...' />
                 </div>
 
                
