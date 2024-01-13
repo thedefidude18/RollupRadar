@@ -22,7 +22,7 @@ function Footer() {
                     <div>
                         <h1 className='text-2xl font-semibold'>RollupRadar</h1>
                         <li className='text-4a4a4a dark:text-eee'>
-                                    <a href='javascript:void(0);' className='text-sm font-medium hover:text-green-hover'>+ List your rollup</a>
+                                    <a href='javascript:void(0);' className='text-sm font-medium hover:text-green-hover'><button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>+ List your Rollup</button></a>
                                 </li>
                         </div>
                     <div>
@@ -49,7 +49,7 @@ function Footer() {
                             <input className='py-1 outline-none text-black text-sm rounded-lg indent-3 my-2 bg-slate-200' type="email" placeholder='이메일 입력' />
                         </div>
                         <div>
-                            <button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>구독</button>
+                            
                         </div>
                     </div>
                     <div className='flex justify-between col-start-2 col-end-4 md:mt-4 sm:mt-9 mt-[68px]'>
@@ -66,7 +66,8 @@ function Footer() {
 
             <div className='py-2 1lg:hidden'>
                 <div className='flex justify-center items-center'>
-                    <a href='https://forms.gle/PjEsUKf4Lb7mziPU6' className='text-white text-xs'>+ List your Rollup</a>
+                    <a href='https://forms.gle/PjEsUKf4Lb7mziPU6' className='text-white text-xs'><button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>+ List your Rollup</button></a>
+                    
                     <span className='mx-1 text-4a4a4a'>•</span>
                     <a href='https://rollupradar.gitbook.io/untitled/' className='text-white text-xs'>docs</a>
                     <span className='mx-1 text-4a4a4a'>•</span>
