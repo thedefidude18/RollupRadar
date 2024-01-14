@@ -1,5 +1,3 @@
-Certainly! Below is a basic template for a README.md file for your RollupRadar open-source GitHub project. You can customize it further based on the specific details and features of your project:
-
 ---
 
 # RollupRadar
@@ -40,5 +38,3 @@ For major changes, please open an issue first to discuss the proposed changes.
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this template based on the specific details of your project. Add more sections if needed, such as a "Roadmap," "FAQ," or "Acknowledgments."
