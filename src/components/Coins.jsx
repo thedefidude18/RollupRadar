@@ -67,10 +67,6 @@ function Coins({ coins }) {
                             <a href='javascript:void(0);' className='rounded-a text-sm font-medium border-b-2 border-transparent py-3'>
                                 <FontAwesomeIcon className='mr-1' icon={faStar} style={{ color: '#5ac8fa' }} /> Listed Rollups | 4,057
                             </a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>코인</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>신규 코인</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>수익률 상/하위</a>
-                            <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>카테고리</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>Solana</a>
                             <a href='javascript:void(0);' className='rounded-a py-3 text-sm font-medium border-b-2 border-transparent'>Avalanche</a>
                         </nav>
