@@ -108,7 +108,18 @@ function Coins({ coins }) {
                                             <tr  className='h-[75px] border-b overflow-hidden'>
                                                  <td className='w-40 text-sm py-1 px-2'>{ele.id}</td>
                                                  <td className='w-40 text-sm py-1 px-2'>{ele.Rollup}</td>
-                                                 <td className='w-40 text-sm py-1 px-2'>{ele.Status}</td>
+                                                 <td className='w-40 text-sm py-1 px-2'><button class="bg-blue-400 hover:bg-blue-400 text-white-800 font-normal py-1 px-2 rounded-lg inline-flex items-center">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 16 16" fill="#a6ff6b" class="bi bi-dot" stroke="#a6ff6b">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.41600000000000004"> <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/> </g>
+
+<g id="SVGRepo_iconCarrier"> <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/> </g>
+
+</svg>
+  <span>LIVE</span>
+</button>{ele.Status}</td>
                                                  <td className='w-40 text-sm py-1 px-2'>{ele.Stack}</td>
                                                  <td className='w-40 text-sm py-1 px-2'>{ele.TVL}</td>
                                                  <td className='w-40 text-sm py-1 px-2'> <a target='_blank' href={"http://"+ele.RPC}>{ele.RPC}</a> </td>
