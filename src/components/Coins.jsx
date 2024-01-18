@@ -79,7 +79,7 @@ function Coins({ coins }) {
                 </div>
 
                 <div className='flex justify-end my-3 border-t'>
-                   <input className='py-1 outline-none text-black text-sm rounded-lg indent-3 my-2 bg-slate-200' type="email" placeholder='이메일 입력' />
+                   <input className='py-1 outline-none text-black text-sm rounded-lg indent-3 my-2 bg-slate-200' type="email" placeholder='Search Rollups..' />
                 </div>
 
                
