@@ -44,9 +44,9 @@ function Footer() {
                         </ul>
                     </div>
                     <div className='flex flex-col'>
-                        <h2 className='text-lg font-semibold'>암호화폐 최신 정보를 원하세요?</h2>
+                        <h2 className='text-lg font-semibold'></h2>
                         <div>
-                            <input className='py-1 outline-none text-black text-sm rounded-lg indent-3 my-2 bg-slate-200' type="email" placeholder='이메일 입력' />
+                            
                         </div>
                         <div>
                             
