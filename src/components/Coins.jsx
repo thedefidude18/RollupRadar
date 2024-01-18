@@ -79,7 +79,7 @@ function Coins({ coins }) {
                 </div>
 
                 <div className='flex justify-end my-3 border-t'>
-                    <input onChange={(e) => setSearchText(e.target.value)} type="text" className='bg-gray-100 dark:bg-gray-600 rounded-md py-1 indent-3 outline-none my-5' placeholder='Search Rollups...' />
+                   <input className='py-1 outline-none text-black text-sm rounded-lg indent-3 my-2 bg-slate-200' type="email" placeholder='이메일 입력' />
                 </div>
 
                
