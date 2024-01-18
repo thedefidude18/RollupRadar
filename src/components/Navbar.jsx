@@ -55,7 +55,7 @@ function Navbar() {
                                     <a href='https://rollupradar.gitbook.io/untitled/' className='text-sm font-medium hover:text-green-hover'>Docs</a>
                                 </li>
                                 <li className='text-4a4a4a dark:text-eee'>
-                                    <a href='https://forms.gle/PjEsUKf4Lb7mziPU6' className='text-sm font-medium hover:text-green-hover'>+ List your rollup</a>
+                                   <a href='https://forms.gle/PjEsUKf4Lb7mziPU6' className='text-white text-xs'><button className='text-xs px-3 py-1 bg-slate-700 rounded-lg'>+ List your Rollup</button></a>
                                 </li>
                             </ul>
                         </div>
